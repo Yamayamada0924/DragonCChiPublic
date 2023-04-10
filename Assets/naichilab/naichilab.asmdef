@@ -1,0 +1,16 @@
+{
+    "name": "naichilab",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ac7d714f72370b84490c02f52fe6e91a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

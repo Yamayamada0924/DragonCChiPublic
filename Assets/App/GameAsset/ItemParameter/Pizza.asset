@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6f0f6a78ff6ff43ba8f5b41902db90, type: 3}
+  m_Name: Pizza
+  m_EditorClassIdentifier: 
+  itemName: "\u6628\u65E5\u306E\u30D4\u30B6"
+  itemKind: 1
+  money: 0
+  sprite: {fileID: 21300000, guid: c4e4f7533a083b74ca34553eab852f82, type: 3}
+  dragonChangeParameter:
+    energy: 0
+    toilet: 30
+    hungry: -70
+    injury: 0
+    wannaPlay: 0
+    like: 0
+    toyLike: 0
+    language: 0
