@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 153139052480886132}
   - component: {fileID: 5163143734330246528}
   - component: {fileID: 8309930513752813965}
+  - component: {fileID: 3570910244766161494}
   m_Layer: 5
   m_Name: Button - Yes
   m_TagString: Untagged
@@ -2428,6 +2429,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &3570910244766161494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361645422391139749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d9c84fefb04f798f4b81fe9c457126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2446367353388290238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2922,6 +2935,7 @@ GameObject:
   - component: {fileID: 8419366157476419273}
   - component: {fileID: 7093843643646360113}
   - component: {fileID: 4445907674991420841}
+  - component: {fileID: 6496018163453934134}
   m_Layer: 5
   m_Name: EndingYesNoPopup
   m_TagString: Untagged
@@ -3668,6 +3682,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d0e890482148beb8c4cefdbb12c074, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6496018163453934134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4891764764082304003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23a1eecc39f4073a0361157f7a54149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Buttons:
+    - {fileID: 3570910244766161494}
+    - {fileID: 5884082521301261417}
+    Images: []
+    Labels: []
 --- !u!1 &6601774525230169808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3951,6 +3983,7 @@ GameObject:
   - component: {fileID: 1703374861764666313}
   - component: {fileID: 8813663846711181051}
   - component: {fileID: 7752824015209248909}
+  - component: {fileID: 5884082521301261417}
   m_Layer: 5
   m_Name: Button - No
   m_TagString: Untagged
@@ -6365,3 +6398,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &5884082521301261417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8727138240413955703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d9c84fefb04f798f4b81fe9c457126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,6 +1,8 @@
 ﻿using Cysharp.Threading.Tasks;
 #if FEATURE_MASTER_AUDIO
 using DarkTonic.MasterAudio;
+#else
+using MasterAudio = yydlib.CompatibleMasterAudio.CompatibleMasterAudio;
 #endif
 using Fungus;
 using UnityEngine;
@@ -26,10 +28,8 @@ namespace App.Scripts.Fungus
             {
                 if(audioTrackName != "")
                 {
-#if FEATURE_MASTER_AUDIO
                     float masterVolumeLevel = MasterAudio.MasterVolumeLevel;
                     AppUtil.ChangeTrackVolume(audioTrackName, playableDirector, defaultVolume * masterVolumeLevel);
-#endif
                 }
                 playableDirector.Play();
                 await UniTask.WaitWhile(() => playableDirector.state == PlayState.Playing);

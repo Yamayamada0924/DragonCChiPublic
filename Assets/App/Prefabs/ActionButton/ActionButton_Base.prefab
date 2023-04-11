@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5253384252889188640}
   - component: {fileID: 3590687334904262832}
   - component: {fileID: 7437777034141043557}
+  - component: {fileID: 1673758309465057473}
   m_Layer: 5
   m_Name: ActionButton_Base
   m_TagString: Untagged
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acab73c3dc0c4209bc2830f01e5f024c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiButton: {fileID: 3590687334904262832}
+  compatibleUIButton: {fileID: 1673758309465057473}
   gameAction: 0
   pointerEnterTrigger: {fileID: 1853859321016824967}
   pointerExitTrigger: {fileID: 5253384252889188640}
@@ -2488,6 +2489,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1673758309465057473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158368242957119792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d9c84fefb04f798f4b81fe9c457126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &636904751153146687
 GameObject:
   m_ObjectHideFlags: 0

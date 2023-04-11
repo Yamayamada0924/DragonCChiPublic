@@ -1,6 +1,8 @@
 ﻿using System;
 #if FEATURE_DOOZY
 using Doozy.Engine.UI;
+#else
+using yydlib.CompatibleDoozyUI;
 #endif
 using TMPro;
 using UniRx;
@@ -20,6 +22,8 @@ namespace App.Scripts.UI
 
 #if FEATURE_DOOZY
         private UIPopup _uiPopup;
+#else
+        private CompatibleUIPopup _uiPopup;
 #endif
 
         private readonly Subject<Unit> _onEndingStart = new Subject<Unit>();
@@ -29,14 +33,16 @@ namespace App.Scripts.UI
         public void Show()
         {
             gameObject.SetActive(true);
-#if FEATURE_DOOZY
             if (_uiPopup == null)
             {
+#if FEATURE_DOOZY
                 _uiPopup = gameObject.GetComponent<UIPopup>();
+#else
+                _uiPopup = gameObject.GetComponent<CompatibleUIPopup>();
+#endif
             }
 
             _uiPopup.Show();
-#endif
         }
 
         // Start is called before the first frame update
@@ -44,6 +50,9 @@ namespace App.Scripts.UI
         {
 #if FEATURE_DOOZY
             _uiPopup = gameObject.GetComponent<UIPopup>();
+#else
+            _uiPopup = gameObject.GetComponent<CompatibleUIPopup>();
+#endif
 
             _uiPopup.Data.Buttons[(int)EndingYesNoButton.Yes].OnClick.OnTrigger.Action += _ =>
             {
@@ -54,7 +63,6 @@ namespace App.Scripts.UI
             {
                 _uiPopup.Hide();
             };
-#endif
         }
 
         private void OnDestroy()

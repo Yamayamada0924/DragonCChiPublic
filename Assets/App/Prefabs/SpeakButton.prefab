@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3157289277508950514}
   - component: {fileID: 4482505465423415000}
   - component: {fileID: 7555328432099310861}
+  - component: {fileID: 2268476673717373689}
   m_Layer: 5
   m_Name: SpeakButton
   m_TagString: Untagged
@@ -56,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fd40b415c454e46bf97c746398539e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiButton: {fileID: 4482505465423415000}
+  compatibleUIButton: {fileID: 2268476673717373689}
   word: 0
   text: {fileID: 8648917773172716919}
 --- !u!222 &6213985208568240152
@@ -2460,6 +2461,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2268476673717373689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996143172848469848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d9c84fefb04f798f4b81fe9c457126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2681439294212006070
 GameObject:
   m_ObjectHideFlags: 0

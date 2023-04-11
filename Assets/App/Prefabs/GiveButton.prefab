@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 2607953883307913114}
   - component: {fileID: 3590687334904262832}
   - component: {fileID: 7437777034141043557}
+  - component: {fileID: 2554507589352785852}
   m_Layer: 5
   m_Name: GiveButton
   m_TagString: Untagged
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d346c24c5fbf4f97b14e1082d2d94b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiButton: {fileID: 3590687334904262832}
+  compatibleUIButton: {fileID: 2554507589352785852}
   itemType: 0
   nameText: {fileID: 8639734806042411807}
   costText: {fileID: 1640870785263424618}
@@ -2557,6 +2558,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2554507589352785852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158368242957119792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d9c84fefb04f798f4b81fe9c457126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &636904751153146687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,9 +2730,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc2cc93475f76427c86a8262bee36b88, type: 2}
-  m_sharedMaterial: {fileID: 2269793554123077917, guid: dc2cc93475f76427c86a8262bee36b88,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

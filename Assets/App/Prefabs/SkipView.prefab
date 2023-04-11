@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2212460615014382393}
   - component: {fileID: 2212460615014382398}
   - component: {fileID: 1194178614034691005}
+  - component: {fileID: 2803690700043154252}
   m_Layer: 5
   m_Name: SkipView
   m_TagString: Untagged
@@ -918,7 +919,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5038fdcb5ba5439c95466aea4ab6f653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skipButton: {fileID: 5327408480600997363}
+  compatibleSkipButton: {fileID: 2747897241080622742}
+--- !u!114 &2803690700043154252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212460615014382396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ae03aaf5d546fabfd96fb7b54bcbdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideOnWake: 1
 --- !u!1 &6986567588603879859
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,6 +946,7 @@ GameObject:
   - component: {fileID: 5204514457283692926}
   - component: {fileID: 8287099724222129442}
   - component: {fileID: 5327408480600997363}
+  - component: {fileID: 2747897241080622742}
   m_Layer: 5
   m_Name: UIButton
   m_TagString: Untagged
@@ -3334,6 +3349,18 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 1
   TextLabel: {fileID: 0}
+--- !u!114 &2747897241080622742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6986567588603879859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d9c84fefb04f798f4b81fe9c457126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8490769828857539521
 GameObject:
   m_ObjectHideFlags: 0

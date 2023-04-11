@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using App.Scripts.Sound;
 #if FEATURE_MASTER_AUDIO
 using DarkTonic.MasterAudio;
+#else
+using MasterAudio = yydlib.CompatibleMasterAudio.CompatibleMasterAudio;
 #endif
 #if FEATURE_DOOZY
 using Doozy.Engine.UI;
+#else
+using yydlib.CompatibleDoozyUI;
 #endif
 using TMPro;
 using UniRx;
@@ -42,8 +46,13 @@ namespace App.Scripts.UI
 
 #if FEATURE_DOOZY
         private UIView _uiView;
-
+#else
+        private CompatibleUIView _uiView;
+#endif
+#if FEATURE_DOOZY
         [SerializeField] private List<UIButton> buttons;
+#else
+        [SerializeField] private List<CompatibleUIButton> compatibleButtons;
 #endif
     
         [SerializeField]  private List<Slider> sliders;
@@ -71,6 +80,10 @@ namespace App.Scripts.UI
         {
 #if FEATURE_DOOZY
             _uiView = gameObject.GetComponent<UIView>();
+#else
+            _uiView = gameObject.GetComponent<CompatibleUIView>();
+            var buttons = compatibleButtons;
+#endif
 
             buttons[(int)TitleButton.Start].OnClick.OnTrigger.Action += _ =>
             {
@@ -113,7 +126,6 @@ namespace App.Scripts.UI
             {
                 endingYesNoBehavior.Show();
             };
-#endif
             endingYesNoBehavior.OnEndingStart.Subscribe(_ =>
             {
                 endingYesNoBehavior.gameObject.SetActive(false);
@@ -124,10 +136,8 @@ namespace App.Scripts.UI
             sliders[(int)TitleSlider.Sound].onValueChanged.AddListener(value =>
             {
                 _soundVolume = value;
-#if FEATURE_MASTER_AUDIO
                 MasterAudio.MasterVolumeLevel = _soundVolume;
                 MasterAudio.PlaylistMasterVolume = _soundVolume;
-#endif
             });
             sliderPointerUps[(int)TitleSlider.Sound].OnValueChanged.AddListener(_ =>
             {
@@ -144,14 +154,13 @@ namespace App.Scripts.UI
         private void Update()
         {
 #if DEBUG
-#if FEATURE_MASTER_AUDIO
             if (Input.GetKeyDown(KeyCode.Alpha1)) {
-                MasterAudio.PlaySound("speedt_mainmenu_button");
+                MasterAudio.PlaySound("Decide");
             }
             if (Input.GetKeyDown(KeyCode.P))
             {
                 //再生
-                MasterAudio.StartPlaylistOnClip("Default", "speedt_music1");
+                MasterAudio.StartPlaylistOnClip("Default", "NormalBGM");
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
@@ -159,15 +168,15 @@ namespace App.Scripts.UI
                 MasterAudio.StopAllPlaylists();
             }
 #endif
-#endif
         }
 
         public void EnableClearedButton()
         {
-#if FEATURE_DOOZY
+#if !FEATURE_DOOZY
+            var buttons = compatibleButtons;
+#endif
             buttons[(int)TitleButton.DragonLanguage].gameObject.SetActive(true);
             buttons[(int)TitleButton.Ending].gameObject.SetActive(true);
-#endif
             _clearedTrueEnding = true;
         }
 

@@ -4,6 +4,8 @@ using App.Scripts.FixedData;
 using App.Scripts.GameCommon;
 #if FEATURE_DOOZY
 using Doozy.Engine.UI;
+#else
+using yydlib.CompatibleDoozyUI;
 #endif
 using Fungus;
 using UniRx;
@@ -18,6 +20,8 @@ namespace App.Scripts.UI
     {
 #if FEATURE_DOOZY
         private UIView _uiView;
+#else
+        private CompatibleUIView _uiView;
 #endif
 
         [SerializeField] private List<GameActionButton> buttons;
@@ -63,6 +67,9 @@ namespace App.Scripts.UI
         {
 #if FEATURE_DOOZY
             _uiView = gameObject.GetComponent<UIView>();
+#else
+            _uiView = gameObject.GetComponent<CompatibleUIView>();
+#endif
 
             for (int i = 0; i < GameUtil.GetEnumCount(typeof(GameAction)); i++)
             {
@@ -92,7 +99,6 @@ namespace App.Scripts.UI
                 buttons[i].OnPointerEnter.Subscribe(gameAction0 => _onActionButtonEnter.OnNext(gameAction0)).AddTo(this);
                 buttons[i].OnPointerExit.Subscribe(gameAction0 => _onActionButtonExit.OnNext(gameAction0)).AddTo(this);
             }
-#endif
             moneyPanel.OnPointerEnter.Subscribe(_ => _onMoneyEnter.OnNext(Unit.Default)).AddTo(this);
             moneyPanel.OnPointerExit.Subscribe(_ => _onMoneyExit.OnNext(Unit.Default)).AddTo(this);
         }

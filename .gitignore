@@ -74,3 +74,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .vsconfig
 *.ods#
+
+# Doozy
+/[Aa]ssets/[Dd]oozy
+/[Aa]ssets/[Gg]izmos/[Dd]oozy

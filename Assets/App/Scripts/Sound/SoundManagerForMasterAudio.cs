@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 #if FEATURE_MASTER_AUDIO
 using DarkTonic.MasterAudio;
+#else
+using MasterAudio = yydlib.CompatibleMasterAudio.CompatibleMasterAudio;
 #endif
 using yydlib;
 
@@ -36,14 +38,11 @@ namespace App.Scripts.Sound
             {
                 GameUtil.Assert(false);
             }
-#if FEATURE_MASTER_AUDIO
             MasterAudio.PlaySound(_seMapping[seId]);
-#endif
         }
         
         public void PlayBgm(BgmId bgmId)
         {
-#if FEATURE_MASTER_AUDIO
             MasterAudio.StopLoopingCurrentSong();
             
             if(!_bgmMapping.ContainsKey(bgmId))
@@ -52,14 +51,11 @@ namespace App.Scripts.Sound
             }
 
             MasterAudio.StartPlaylistOnClip(PlaylistName, _bgmMapping[bgmId]);
-#endif
         }
         
         public void StopBgm()
         {
-#if FEATURE_MASTER_AUDIO
             MasterAudio.StopAllPlaylists();
-#endif
         }
     }
 

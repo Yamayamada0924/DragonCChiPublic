@@ -3,6 +3,8 @@ using App.Scripts.FixedData;
 using App.Scripts.GameCommon;
 #if FEATURE_DOOZY
 using Doozy.Engine.UI;
+#else
+using yydlib.CompatibleDoozyUI;
 #endif
 using TMPro;
 using UniRx;
@@ -18,7 +20,11 @@ namespace App.Scripts.UI
 #if FEATURE_DOOZY
         [SerializeField] private UIButton uiButton;
         public UIButton UIButton => uiButton;
+#else
+        [SerializeField] private CompatibleUIButton compatibleUIButton;
+        public CompatibleUIButton UIButton => compatibleUIButton;
 #endif
+
 
         [SerializeField] private ItemType itemType;
         public ItemType ItemType => itemType;

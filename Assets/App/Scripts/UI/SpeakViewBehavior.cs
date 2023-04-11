@@ -4,6 +4,8 @@ using App.Scripts.FixedData;
 using App.Scripts.GameCommon;
 #if FEATURE_DOOZY
 using Doozy.Engine.UI;
+#else
+using yydlib.CompatibleDoozyUI;
 #endif
 using Fungus;
 using UniRx;
@@ -18,6 +20,8 @@ namespace App.Scripts.UI
     {
 #if FEATURE_DOOZY
         private UIView _uiView;
+#else
+        private CompatibleUIView _uiView;
 #endif
 
         [SerializeField] private List<SpeakButton> buttons;
@@ -44,6 +48,9 @@ namespace App.Scripts.UI
         {
 #if FEATURE_DOOZY
             _uiView = gameObject.GetComponent<UIView>();
+#else
+            _uiView = gameObject.GetComponent<CompatibleUIView>();
+#endif
 
             foreach (var speakButton in buttons)
             {
@@ -76,7 +83,6 @@ namespace App.Scripts.UI
                     _uiView.Hide();
                 });
             }
-#endif 
         }
         public void Dispose()
         {
@@ -87,7 +93,6 @@ namespace App.Scripts.UI
         }
         private void Update()
         {
-#if FEATURE_DOOZY
             if (_fixScrollBar && !_uiView.IsVisible)
             {
                 scrollRect.verticalNormalizedPosition = 1.0f;
@@ -96,14 +101,11 @@ namespace App.Scripts.UI
             {
                 _fixScrollBar = false;
             }
-#endif
         }
         public void Show()
         {
-#if FEATURE_DOOZY
             _fixScrollBar = true;
             _uiView.Show();
-#endif
         }
         
         public void SetTexts(bool withJapanese)

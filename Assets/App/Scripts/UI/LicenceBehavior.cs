@@ -1,5 +1,7 @@
 ﻿#if FEATURE_DOOZY
 using Doozy.Engine.UI;
+#else
+using yydlib.CompatibleDoozyUI;
 #endif
 using TMPro;
 using UnityEngine;
@@ -27,6 +29,8 @@ namespace App.Scripts.UI
 
 #if FEATURE_DOOZY
         private UIPopup _uiPopup;
+#else
+        private CompatibleUIPopup _uiPopup;
 #endif
 
         private string _licenseMessage;
@@ -40,13 +44,16 @@ namespace App.Scripts.UI
             _licenseMessage = (Resources.Load($"License", typeof(TextAsset)) as TextAsset)?.text;
 
             gameObject.SetActive(true);
+            
 #if FEATURE_DOOZY
             _uiPopup = gameObject.GetComponent<UIPopup>();
+#else
+            _uiPopup = gameObject.GetComponent<CompatibleUIPopup>();
+#endif
 
             _fixScrollBar = true;
 
             _uiPopup.Show();
-#endif
         }
 
         // Start is called before the first frame update
@@ -54,12 +61,14 @@ namespace App.Scripts.UI
         {
 #if FEATURE_DOOZY
             _uiPopup = gameObject.GetComponent<UIPopup>();
+#else
+            _uiPopup = gameObject.GetComponent<CompatibleUIPopup>();
+#endif
 
             _uiPopup.Data.Buttons[(int)LicenseButton.Ok].OnClick.OnTrigger.Action += _ =>
             {
                 _uiPopup.Hide();
             };
-#endif
         }
 
         private void OnDestroy()
@@ -69,7 +78,6 @@ namespace App.Scripts.UI
         // Update is called once per frame
         private void Update()
         {
-#if FEATURE_DOOZY
             if (_fixScrollBar && !_uiPopup.IsVisible)
             {
                 scrollRect.verticalNormalizedPosition = 1.0f;
@@ -83,7 +91,6 @@ namespace App.Scripts.UI
 
                 _fixScrollBar = false;
             }
-#endif
         }
 
     }

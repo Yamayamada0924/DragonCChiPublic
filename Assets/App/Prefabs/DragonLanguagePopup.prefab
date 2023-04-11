@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 3016634112811943833}
   - component: {fileID: 2293151684187777379}
   - component: {fileID: 6980870872955079960}
+  - component: {fileID: 1791604965895465748}
   m_Layer: 5
   m_Name: DragonLanguagePopup
   m_TagString: Untagged
@@ -1024,6 +1025,23 @@ MonoBehaviour:
   UpdateHideProgressorOnShow: 0
   UpdateShowProgressorOnHide: 0
   UseOverlay: 1
+--- !u!114 &1791604965895465748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2183230059418912458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23a1eecc39f4073a0361157f7a54149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Data:
+    Buttons:
+    - {fileID: 6813724140875152684}
+    Images: []
+    Labels: []
 --- !u!1 &3438899766192474279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,6 +1056,7 @@ GameObject:
   - component: {fileID: 5486238997440898758}
   - component: {fileID: 6692065287812205153}
   - component: {fileID: 106337022489240586}
+  - component: {fileID: 6813724140875152684}
   m_Layer: 5
   m_Name: Button - Ok
   m_TagString: Untagged
@@ -3452,6 +3471,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &6813724140875152684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3438899766192474279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d9c84fefb04f798f4b81fe9c457126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3585470059519193526
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2212460615014382393}
   - component: {fileID: 2212460615014382398}
   - component: {fileID: 8562887226179934300}
+  - component: {fileID: 8474746600587711582}
   m_Layer: 5
   m_Name: End1
   m_TagString: Untagged
@@ -918,8 +919,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f469310ecad840cbb15fb6d61f140cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiView: {fileID: 2212460615014382399}
+  compatibleUIView: {fileID: 8474746600587711582}
   wait: 2
+--- !u!114 &8474746600587711582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212460615014382396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ae03aaf5d546fabfd96fb7b54bcbdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideOnWake: 1
 --- !u!1 &2957199000111459448
 GameObject:
   m_ObjectHideFlags: 0

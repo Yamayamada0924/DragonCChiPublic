@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1279598148876651111}
   - component: {fileID: 2081882633124044727}
   - component: {fileID: 6996715972991313171}
+  - component: {fileID: 5791134280939358427}
   m_Layer: 5
   m_Name: GiveView
   m_TagString: Untagged
@@ -1019,6 +1020,19 @@ MonoBehaviour:
   - {fileID: 8849458314042777850}
   - {fileID: 5478872672605383433}
   scrollRect: {fileID: 5220489374239855275}
+--- !u!114 &5791134280939358427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3762378035610474889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ae03aaf5d546fabfd96fb7b54bcbdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideOnWake: 1
 --- !u!1 &4262469320083774673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4074,6 +4088,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4216,6 +4241,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4358,6 +4394,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4500,6 +4547,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4642,6 +4700,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4784,6 +4853,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4926,6 +5006,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5068,6 +5159,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5210,6 +5312,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5352,6 +5465,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5494,6 +5618,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5636,6 +5771,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5778,6 +5924,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5920,6 +6077,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6062,6 +6230,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6204,6 +6383,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6346,6 +6536,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -6488,6 +6689,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GiveButton (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 1640870785263424618, guid: 18b7d4fe6cc72e044850535f6956569b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4527275083873124918, guid: 18b7d4fe6cc72e044850535f6956569b,
         type: 3}
       propertyPath: m_Pivot.x

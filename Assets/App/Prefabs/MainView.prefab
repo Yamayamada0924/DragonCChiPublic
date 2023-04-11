@@ -68,9 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 5000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5f58c05479cb14f588efcdfcbdab347c, type: 2}
-  m_sharedMaterial: {fileID: 7423409246693961632, guid: 5f58c05479cb14f588efcdfcbdab347c,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -194,6 +193,7 @@ GameObject:
   - component: {fileID: 1279598148876651111}
   - component: {fileID: 2081882633124044727}
   - component: {fileID: 2727768200854450511}
+  - component: {fileID: 2811083013726651463}
   m_Layer: 5
   m_Name: MainView
   m_TagString: Untagged
@@ -1107,6 +1107,19 @@ MonoBehaviour:
   moneyPanel: {fileID: 6478908868029775017}
   speakViewBehavior: {fileID: 0}
   giveViewBehavior: {fileID: 0}
+--- !u!114 &2811083013726651463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3762378035610474889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ae03aaf5d546fabfd96fb7b54bcbdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideOnWake: 1
 --- !u!1 &6346787364656224196
 GameObject:
   m_ObjectHideFlags: 0

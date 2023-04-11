@@ -1,6 +1,8 @@
 ﻿using System;
 #if FEATURE_DOOZY
 using Doozy.Engine.UI;
+#else
+using yydlib.CompatibleDoozyUI;
 #endif
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,6 +14,8 @@ namespace App.Scripts.UI
     {
 #if FEATURE_DOOZY
         [SerializeField] private UIView uiView;
+#else
+        [SerializeField] private CompatibleUIView compatibleUIView;
 #endif
 
         [SerializeField] private float wait;
@@ -20,13 +24,19 @@ namespace App.Scripts.UI
         
         public void OnPointerClick(PointerEventData eventData)
         {
-#if FEATURE_DOOZY
+#if !FEATURE_DOOZY
+            var uiView = compatibleUIView;
+#endif
+            
             GameUtil.Assert(uiView != null);
+#if FEATURE_DOOZY
             if (uiView.Visibility == VisibilityState.Visible && _waitTime >= wait)
+#else
+            if (uiView.Visibility == CompatibleVisibilityState.Visible && _waitTime >= wait)
+#endif
             {
                 uiView.Hide();
             }
-#endif
         }
 
         public void Update()
