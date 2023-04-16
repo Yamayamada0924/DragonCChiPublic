@@ -7,6 +7,8 @@ using App.Scripts.Sound;
 using App.Scripts.UI;
 #if FEATURE_MASTER_AUDIO
 using DarkTonic.MasterAudio;
+#else
+using MasterAudio = yydlib.CompatibleMasterAudio.CompatibleMasterAudio;
 #endif
 using Fungus;
 using UnityEngine;
@@ -29,9 +31,9 @@ namespace App.Scripts.GameCommon
 
         private readonly CompositeDisposable _disposable = new CompositeDisposable();
 #if false
-    // 自分でInjectするもの.
-    [Inject]
-    InjectTest injectTest { get; set; }
+        // 自分でInjectするものがあればこうするというメモ
+        [Inject]
+        InjectTest injectTest { get; set; }
 #endif
 
         public GamePresenter(
@@ -66,9 +68,7 @@ namespace App.Scripts.GameCommon
                 _gameSoundView.PlayDecide();
                 _gameModel.ResetGame(_titleBehavior.IsWithJapanese);
                 _mainMenuBehavior.SetSpeakViewText(_gameModel.IsWithJapanese());
-#if FEATURE_MASTER_AUDIO
                 _flowchartController.SetVolume(MasterAudio.MasterVolumeLevel);
-#endif
                 _flowchartController.StartOpeningBlock(_gameModel.IsWithJapanese());
             }).AddTo(_disposable);
 
@@ -299,16 +299,6 @@ namespace App.Scripts.GameCommon
 
             _flowchartController.UpdateGame();
 #if DEBUG
-            if (Input.anyKeyDown)
-            {
-                if (Input.GetKeyDown(KeyCode.S))
-                {
-                }
-                if (Input.GetKeyDown(KeyCode.H))
-                {
-                }
-            }
-
             DebugDragonParamViewer.Instance.Debug_SetDragonParam(_gameModel.Debug_GetDragonParam());
 #endif
         }

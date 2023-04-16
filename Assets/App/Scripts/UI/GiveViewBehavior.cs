@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using App.Scripts.FixedData;
 using App.Scripts.GameCommon;
-#if FEATURE_MASTER_AUDIO
-using DarkTonic.MasterAudio;
-#endif
 #if FEATURE_DOOZY
 using Doozy.Engine.UI;
 #else
