@@ -17,9 +17,6 @@ namespace App.Scripts
         [SerializeField]
         public GameLifetimeScope gameLifetimeScope;
 
-
-        [SerializeField] private GameView.GameView gameView;
-
         [SerializeField] private TitleBehavior titleBehavior;
         [SerializeField] private MainMenuBehavior mainMenuBehavior;
         [SerializeField] private FlowchartController flowchartController;
@@ -83,8 +80,6 @@ namespace App.Scripts
 
         private void StartGameModelView()
         {
-            gameView.Init();
-            gameLifetimeScope.SetGameView(gameView);
             gameLifetimeScope.SetFlowchartController(flowchartController);
             gameLifetimeScope.SetTitleBehavior(titleBehavior);
             gameLifetimeScope.SetMainMenuBehavior(mainMenuBehavior);
@@ -96,7 +91,6 @@ namespace App.Scripts
         private void EndGameModelView()
         {
             gameLifetimeScope.DisposeCore();
-            gameView.Term();
         }
 
 

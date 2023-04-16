@@ -21,7 +21,6 @@ namespace App.Scripts.GameCommon
     public class GamePresenter : IStartable, ITickable, System.IDisposable
     {
         private readonly GameModel.GameModel _gameModel;
-        private readonly GameView.GameView _gameView;
         private readonly FlowchartController _flowchartController;
         private readonly TitleBehavior _titleBehavior;
         private readonly MainMenuBehavior _mainMenuBehavior;
@@ -38,7 +37,6 @@ namespace App.Scripts.GameCommon
 
         public GamePresenter(
             GameModel.GameModel gameModel,
-            GameView.GameView gameView,
             FlowchartController flowchartController,
             TitleBehavior titleBehavior,
             MainMenuBehavior mainMenuBehavior,
@@ -48,7 +46,6 @@ namespace App.Scripts.GameCommon
         )
         {
             this._gameModel = gameModel;
-            this._gameView = gameView;
             this._flowchartController = flowchartController;
             this._titleBehavior = titleBehavior;
             this._mainMenuBehavior = mainMenuBehavior;
@@ -293,8 +290,7 @@ namespace App.Scripts.GameCommon
             }
             
             CommonParameters.IViewParamReadOnly viewParam = _gameModel.GetViewParam();
-
-            _gameView.UpdateGame(viewParam);
+            
             _mainMenuBehavior.UpdateGame(viewParam);
 
             _flowchartController.UpdateGame();

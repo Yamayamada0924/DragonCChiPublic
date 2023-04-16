@@ -9,17 +9,12 @@ namespace App.Scripts.GameCommon
 {
     public class GameLifetimeScope : LifetimeScope
     {
-        private GameView.GameView _gameView;
         private FlowchartController _flowchartController;
         private TitleBehavior _titleBehavior;
         private MainMenuBehavior _mainMenuBehavior;
         private SpotLightChangeView _spotLightChangeView;
         private SkipViewBehavior _skipViewBehavior;
-
-        public void SetGameView(GameView.GameView gameView)
-        {
-            this._gameView = gameView;
-        }
+        
         
         public void SetFlowchartController(FlowchartController flowchartController)
         {
@@ -47,7 +42,6 @@ namespace App.Scripts.GameCommon
         {
             builder.Register<GameModel.GameModel>(Lifetime.Singleton);
             builder.Register<GameSoundView>(Lifetime.Singleton);
-            builder.RegisterComponent(_gameView);
             builder.RegisterComponent(_flowchartController);
             builder.RegisterComponent(_titleBehavior);
             builder.RegisterComponent(_mainMenuBehavior);

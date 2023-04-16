@@ -30967,7 +30967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLifetimeScope: {fileID: 1084572456}
-  gameView: {fileID: 1330192006}
   titleBehavior: {fileID: 1762713268}
   mainMenuBehavior: {fileID: 4021446626090185584}
   flowchartController: {fileID: 1467272976}
